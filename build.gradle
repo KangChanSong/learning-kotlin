@@ -1,5 +1,5 @@
 plugins {
-    id 'org.jetbrains.kotlin.jvm' version '1.7.21'
+    id 'org.jetbrains.kotlin.jvm' version '1.9.0'
     id 'application'
 }
 
@@ -19,6 +19,8 @@ dependencies {
     // https://mvnrepository.com/artifact/io.kotest/kotest-property-jvm
     implementation 'io.kotest:kotest-property-jvm:5.5.4'
 
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.9.0-RC")
+
 }
 
 test {
@@ -26,13 +28,14 @@ test {
 }
 
 compileKotlin {
-    kotlinOptions.jvmTarget = '1.8'
+    kotlinOptions.jvmTarget = '11'
 }
 
 compileTestKotlin {
-    kotlinOptions.jvmTarget = '1.8'
+    kotlinOptions.jvmTarget = '11'
 }
 
 application {
     mainClassName = 'MainKt'
 }
+

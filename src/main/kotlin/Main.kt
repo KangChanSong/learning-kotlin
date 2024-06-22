@@ -1,3 +1,16 @@
+import coroutines.coroutine_basics.runHeavyJobInCoroutine
+
+
 fun main(args: Array<String>) {
-    println("Hello World!")
+//    runMyFirstCoroutines()
+//    println("-----------------------")
+//    runMyFirstSuspendFunction()
+//    println("-----------------------")
+//    runMyFirstScopeBuiler()
+//    println("-----------------------")
+//    runMyFirstScopeBuilderMultiple()
+//    println("-----------------------")
+//    runMyFirstExplicitJob()
+//    println("-----------------------")
+    runHeavyJobInCoroutine()
 }
