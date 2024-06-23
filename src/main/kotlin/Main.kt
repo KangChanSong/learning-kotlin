@@ -1,4 +1,4 @@
-import coroutines.coroutine_basics.runHeavyJobInCoroutine
+import coroutines.coroutines_and_channels_tutorial.groupByLoginAndCountContributions
 
 
 fun main(args: Array<String>) {
@@ -12,5 +12,6 @@ fun main(args: Array<String>) {
 //    println("-----------------------")
 //    runMyFirstExplicitJob()
 //    println("-----------------------")
-    runHeavyJobInCoroutine()
+//    runHeavyJobInCoroutine()
+    println(groupByLoginAndCountContributions())
 }
