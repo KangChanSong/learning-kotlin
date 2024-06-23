@@ -1,4 +1,4 @@
-import coroutines.coroutines_and_channels_tutorial.groupByLoginAndCountContributions
+import coroutines.test.runMultiplePrint
 
 
 fun main(args: Array<String>) {
@@ -13,5 +13,6 @@ fun main(args: Array<String>) {
 //    runMyFirstExplicitJob()
 //    println("-----------------------")
 //    runHeavyJobInCoroutine()
-    println(groupByLoginAndCountContributions())
+//    println(groupByLoginAndCountContributions())
+    runMultiplePrint()
 }
